@@ -131,7 +131,7 @@ public class NCMBInstallationTest {
         //check
         Assert.assertNull(error);
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
     }
@@ -156,7 +156,7 @@ public class NCMBInstallationTest {
         Assert.assertNull(error);
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
         Assert.assertEquals("value1", installation.getString("key"));
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getUpdateDate());
@@ -203,7 +203,7 @@ public class NCMBInstallationTest {
 
         //check
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
     }
@@ -224,7 +224,7 @@ public class NCMBInstallationTest {
         //check
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
         Assert.assertEquals("value1", installation.getString("key"));
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getUpdateDate());
@@ -270,7 +270,7 @@ public class NCMBInstallationTest {
         //check
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
         Assert.assertEquals("value1", installation.getString("key"));
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getUpdateDate());
@@ -319,7 +319,7 @@ public class NCMBInstallationTest {
         //check
         Assert.assertNull(error);
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
     }
@@ -349,7 +349,7 @@ public class NCMBInstallationTest {
 
         //check
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getUpdateDate());
@@ -373,7 +373,7 @@ public class NCMBInstallationTest {
         //check
         Assert.assertEquals("7FrmPTBKSNtVjajm", installation.getObjectId());
         Assert.assertEquals("value", installation.getString("key"));
-        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getDeviceToken());
+        Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", installation.getLocalDeviceToken());
         DateFormat format = NCMBDateFormat.getIso8601();
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getCreateDate());
         Assert.assertEquals(format.parse("2014-06-03T11:28:30.348Z"), installation.getUpdateDate());
@@ -393,7 +393,7 @@ public class NCMBInstallationTest {
                 //check
                 Assert.assertEquals("7FrmPTBKSNtVjajm", fetchedInstallation.getObjectId());
                 Assert.assertEquals("value", fetchedInstallation.getString("key"));
-                Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", fetchedInstallation.getDeviceToken());
+                Assert.assertEquals("xxxxxxxxxxxxxxxxxxx", fetchedInstallation.getLocalDeviceToken());
                 Assert.assertEquals("2014-06-03T11:28:30.348Z", fetchedInstallation.getString("createDate"));
                 Assert.assertEquals("2014-06-03T11:28:30.348Z", fetchedInstallation.getString("updateDate"));
             }
