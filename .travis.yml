@@ -20,3 +20,5 @@ android:
 script:
   - cd ncmb-core
   - ./gradlew build test --continue --info
+  - cat /home/travis/build/vfa-cancc/ncmb_android/ncmb-core/build/reports/tests/testDebugUnitTest/index.html
+
